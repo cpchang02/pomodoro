@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Your Extension Name",
+  "version": "1.0",
+  "description": "Your extension description",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "tabs"
+  ],
+  
+  "action": {
+    "default_popup": "popup.html"
+   
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "images/tomato.png",
+    "32": "images/tomato.png",
+    "48": "images/tomato.png",
+    "128": "images/tomato.png"
+  }
+}
